@@ -2,6 +2,7 @@ package pl.inteca.creditApp.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import pl.inteca.creditApp.model.CreditHibernate;
 import pl.inteca.creditApp.model.ProductHibernate;
@@ -16,4 +17,7 @@ public interface ProductHibernateRepository extends JpaRepository<ProductHiberna
     List<ProductHibernate> findAll();
 
     Optional<ProductHibernate> findByProductNameAndValue(String productName, Double value);
+
+    @Query("select sum(p.value) from ProductHibernate p")
+    double sumPriceProduct();
 }

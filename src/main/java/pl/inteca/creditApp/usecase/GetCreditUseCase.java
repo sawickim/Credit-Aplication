@@ -22,7 +22,6 @@ import java.util.Optional;
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class GetCreditUseCase {
-
     private final CreditHibernateRepository creditHibernateRepository;
     private final CustomerHibernateRepository customerHibernateRepository;
     private final ProductHibernateRepository productHibernateRepository;

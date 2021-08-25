@@ -12,10 +12,11 @@ import java.util.List;
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class GetProductUseCase {
-
     private final ProductHibernateRepository productHibernateRepository;
 
     public List<ProductHibernate> getAllProducts(){
         return productHibernateRepository.findAll();
     }
+
+    public double getSumProductValue(){return productHibernateRepository.sumPriceProduct();}
 }

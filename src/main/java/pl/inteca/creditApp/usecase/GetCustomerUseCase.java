@@ -12,7 +12,6 @@ import java.util.List;
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class GetCustomerUseCase {
-
     private final CustomerHibernateRepository customerHibernateRepository;
 
     public List<CustomerHibernate> getAllCustomer(){

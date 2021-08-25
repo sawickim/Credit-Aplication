@@ -18,7 +18,6 @@ import java.util.Optional;
 @Transactional(rollbackOn = Throwable.class)
 @RequiredArgsConstructor
 public class AddCustomerUseCase {
-
     private final CustomerHibernateRepository customerHibernateRepository;
     private final CreditHibernateRepository creditHibernateRepository;
 

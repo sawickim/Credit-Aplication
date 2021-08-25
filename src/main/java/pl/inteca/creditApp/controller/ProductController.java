@@ -27,8 +27,13 @@ public class ProductController {
         return addProductUseCase.add(command);
     }
 
-    @GetMapping
+    @GetMapping("/allProducts")
     List<ProductDTO> getAllProducts(){
         return getProductUseCase.getAllProducts().stream().map(ProductDTO::new).collect(Collectors.toList());
+    }
+
+    @GetMapping("/sumProductValues")
+    double getSumProductValue(){
+        return getProductUseCase.getSumProductValue();
     }
 }
