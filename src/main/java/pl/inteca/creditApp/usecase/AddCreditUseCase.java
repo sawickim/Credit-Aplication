@@ -4,13 +4,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.inteca.creditApp.controller.dto.command.AddCreditCommand;
 import pl.inteca.creditApp.exception.CreditNameAndNumberAlreadyExistException;
-import pl.inteca.creditApp.exception.CustomerPeselAlreadyExistException;
 import pl.inteca.creditApp.model.CreditHibernate;
 import pl.inteca.creditApp.repository.CreditHibernateRepository;
-import pl.inteca.creditApp.repository.CustomerHibernateRepository;
 
 import javax.transaction.Transactional;
-import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
@@ -19,7 +16,6 @@ import java.util.Random;
 @RequiredArgsConstructor
 public class AddCreditUseCase {
     private final CreditHibernateRepository creditHibernateRepository;
-    private final CustomerHibernateRepository customerHibernateRepository;
 
     public Long add(AddCreditCommand command){
         validateCreditNameAndNumber(command.getCreditName(), command.getCreditNumber());

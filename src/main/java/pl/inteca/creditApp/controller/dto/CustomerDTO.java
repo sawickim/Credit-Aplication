@@ -1,10 +1,8 @@
 package pl.inteca.creditApp.controller.dto;
 
 import lombok.Data;
-import pl.inteca.creditApp.model.CreditHibernate;
 import pl.inteca.creditApp.model.CustomerHibernate;
 import pl.inteca.creditApp.utils.ObjectMapperUtils;
-
 import java.io.Serializable;
 
 @Data

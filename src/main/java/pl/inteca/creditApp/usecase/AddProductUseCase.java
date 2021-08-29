@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.inteca.creditApp.controller.dto.command.AddProductCommand;
 import pl.inteca.creditApp.exception.CreditNumberDoesNotExistException;
-import pl.inteca.creditApp.exception.EntityDoesNotExistException;
 import pl.inteca.creditApp.exception.ProductNameAlreadyExistException;
 import pl.inteca.creditApp.model.CreditHibernate;
 import pl.inteca.creditApp.model.ProductHibernate;

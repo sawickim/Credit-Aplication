@@ -5,8 +5,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import pl.inteca.creditApp.controller.dto.*;
 import pl.inteca.creditApp.controller.dto.command.AddCreditCommand;
-import pl.inteca.creditApp.model.CustomerHibernate;
-import pl.inteca.creditApp.model.ProductHibernate;
 import pl.inteca.creditApp.usecase.AddCreditUseCase;
 import pl.inteca.creditApp.usecase.GetCreditUseCase;
 

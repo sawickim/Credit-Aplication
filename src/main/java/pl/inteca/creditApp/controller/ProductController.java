@@ -3,7 +3,6 @@ package pl.inteca.creditApp.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import pl.inteca.creditApp.controller.dto.CustomerDTO;
 import pl.inteca.creditApp.controller.dto.ProductDTO;
 import pl.inteca.creditApp.controller.dto.command.AddProductCommand;
 import pl.inteca.creditApp.usecase.AddProductUseCase;
@@ -23,7 +22,6 @@ public class ProductController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Long add(@RequestBody AddProductCommand command){
-
         return addProductUseCase.add(command);
     }
 

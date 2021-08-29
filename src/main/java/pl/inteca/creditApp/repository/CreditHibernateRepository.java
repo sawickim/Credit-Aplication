@@ -2,7 +2,6 @@ package pl.inteca.creditApp.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
-import pl.inteca.creditApp.controller.dto.ProductDTO;
 import pl.inteca.creditApp.model.CreditHibernate;
 import pl.inteca.creditApp.model.CustomerHibernate;
 import pl.inteca.creditApp.model.ProductHibernate;
@@ -22,7 +21,5 @@ public interface CreditHibernateRepository extends JpaRepository<CreditHibernate
     List<CreditHibernate> findAll();
 
     Optional<CreditHibernate> findByProductsContains(Optional<ProductHibernate> products);
-
-    Optional<List<CreditHibernate>> findAllByProductsIn(List<ProductHibernate> products);
 
 }

@@ -11,7 +11,6 @@ import pl.inteca.creditApp.repository.CreditHibernateRepository;
 import pl.inteca.creditApp.repository.CustomerHibernateRepository;
 
 import javax.transaction.Transactional;
-import java.util.List;
 import java.util.Optional;
 
 @Service

@@ -3,9 +3,8 @@ package pl.inteca.creditApp.controller.dto;
 import lombok.Data;
 import pl.inteca.creditApp.model.ProductHibernate;
 import pl.inteca.creditApp.utils.ObjectMapperUtils;
-
 import java.io.Serializable;
-import java.math.BigDecimal;
+
 
     @Data
     public class ProductDTO implements Serializable {
